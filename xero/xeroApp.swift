@@ -11,18 +11,19 @@ import SwiftUI
 struct xeroApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingPage()
         }
 
-//        ImmersiveSpace(id: "ImmersiveSpace") {
-//            ImmersiveView()
-//        }.immersionStyle(selection: .constant(.full), in: .full)
+        ImmersiveSpace(id: "ImmersiveSpace") {
+            ImmersiveView()
+        }.immersionStyle(selection: .constant(.full), in: .full)
     }
 }
 
 #Preview(windowStyle: .automatic)
 {
     
+    LandingPage()
 }
 
 

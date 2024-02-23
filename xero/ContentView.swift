@@ -4,7 +4,7 @@ import RealityKitContent
 
 struct ContentView: View {
     // Grid columns definition
-    private let gridColumns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
+    private let gridColumns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     let img = Image("image") // Correctly loading the image from your assets
 
     @State private var showImmersiveSpace = false
@@ -13,16 +13,36 @@ struct ContentView: View {
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
+    func buttonPressed(){
+        
+    }
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: gridColumns, spacing: 5) {
-                ForEach(1...24, id: \.self) { _ in
-                    img // Use the image directly
-                        .resizable() // Make the image resizable
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 300, height: 250)
-                        .cornerRadius(25)
-                        .padding(15)
+                  LazyVGrid(columns: gridColumns, spacing: 0) { // Reduced spacing for better fit
+                      ForEach(1...6, id: \.self) { num in
+                          ZStack {
+                              Image("image\(num)")
+                                  .resizable()
+                                  .aspectRatio(contentMode: .fill)
+                                  .frame(width: 600, height: 400) // Adjusted frame size for better grid fitting
+                                  .cornerRadius(25)
+                                  .padding(25)
+                              
+                              VStack {
+                                  Text("Image \(num)") // Added num to differentiate texts
+                                      .font(.largeTitle)
+                                      .foregroundColor(.black)
+                                       // Make text more readable against the image background
+                                  Button(action: buttonPressed) {
+                                      Text("Start Folding")
+                                          .foregroundColor(.white)
+                                          .padding()
+                                          .glassBackgroundEffect()
+                                          .cornerRadius(10)
+                                  }
+                        }
+                        
+                    }
                         
                 }
             }

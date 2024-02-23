@@ -24,29 +24,60 @@ struct LandingPage: View {
 
     var body: some View {
         
-            VStack {
-             Text("Redirected to new Page").font(.title)
-                    .padding()
-            }
-            .padding(.horizontal)
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                    case .opened:
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    @unknown default:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
+        TabView {
+                    HomeTabView()
+                        .tabItem {
+                            Label("Home", systemImage: "house.fill")
+                        }
+
+                   AboutTabView()
+                        .tabItem {
+                            Label("About", systemImage: "questionmark.circle.fill")
+                        }
+            ThirdTabView()
+                .tabItem {
+                    Label("Third", systemImage: "3.circle")
+                }
+            FourthTabView()
+                .tabItem {
+                    Label("Fourth", systemImage: "4.circle")
+                }
                 }
             }
+        }
+
+        struct HomeTabView: View {
+            var body: some View {
+                // Your first tab content here
+                VStack {
+                    DemoView()
+                }
+            }
+        }
+
+        struct AboutTabView: View {
+            var body: some View {
+                // Your second tab content here
+                VStack {
+                    Text("Second Tab")
+                        .font(.largeTitle)
+                }
+            }
+        }
+struct ThirdTabView: View {
+    var body: some View {
+        // Your second tab content here
+        VStack {
+            ContentView()
+        }
+    }
+}
+struct FourthTabView: View {
+    var body: some View {
+        // Your second tab content here
+        VStack {
+            Text("Fourth Tab")
+                .font(.largeTitle)
         }
     }
 }
