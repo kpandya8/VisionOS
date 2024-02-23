@@ -15,6 +15,7 @@
 		44194FB92B7EFE8300CC62E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44194FB82B7EFE8300CC62E9 /* Assets.xcassets */; };
 		44194FBC2B7EFE8300CC62E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44194FBB2B7EFE8300CC62E9 /* Preview Assets.xcassets */; };
 		44194FC72B7EFE8300CC62E9 /* xeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44194FC62B7EFE8300CC62E9 /* xeroTests.swift */; };
+		44F130C02B830BE4006BB1EC /* landingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F130BF2B830BE4006BB1EC /* landingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		44194FBD2B7EFE8300CC62E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44194FC22B7EFE8300CC62E9 /* xeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44194FC62B7EFE8300CC62E9 /* xeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xeroTests.swift; sourceTree = "<group>"; };
+		44F130BF2B830BE4006BB1EC /* landingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,10 @@
 				44194FB02B7EFE8100CC62E9 /* xeroApp.swift */,
 				44194FB22B7EFE8100CC62E9 /* ContentView.swift */,
 				44194FB42B7EFE8100CC62E9 /* ImmersiveView.swift */,
+				44F130BF2B830BE4006BB1EC /* landingPage.swift */,
 				44194FB62B7EFE8100CC62E9 /* ImageBasedLighting.skybox */,
 				44194FB82B7EFE8300CC62E9 /* Assets.xcassets */,
+				44194FD02B7F02A400CC62E9 /* MultipleWindow */,
 				44194FBD2B7EFE8300CC62E9 /* Info.plist */,
 				44194FBA2B7EFE8300CC62E9 /* Preview Content */,
 			);
@@ -115,6 +119,13 @@
 				44194FC62B7EFE8300CC62E9 /* xeroTests.swift */,
 			);
 			path = xeroTests;
+			sourceTree = "<group>";
+		};
+		44194FD02B7F02A400CC62E9 /* MultipleWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MultipleWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			files = (
 				44194FB32B7EFE8100CC62E9 /* ContentView.swift in Sources */,
 				44194FB12B7EFE8100CC62E9 /* xeroApp.swift in Sources */,
+				44F130C02B830BE4006BB1EC /* landingPage.swift in Sources */,
 				44194FB52B7EFE8100CC62E9 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
