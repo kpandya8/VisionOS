@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "landmark_app_icon_1024x1024.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "landmark_app_icon_1024x1024 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "landmark_app_icon_1024x1024 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

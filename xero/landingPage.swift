@@ -32,15 +32,15 @@ struct LandingPage: View {
 
                    AboutTabView()
                         .tabItem {
-                            Label("About", systemImage: "questionmark.circle.fill")
+                            Label("About", systemImage: "swiftdata")
                         }
             ThirdTabView()
                 .tabItem {
-                    Label("Third", systemImage: "3.circle")
+                    Label("Third", systemImage: "swiftdata")
                 }
             FourthTabView()
                 .tabItem {
-                    Label("Fourth", systemImage: "4.circle")
+                    Label("Fourth", systemImage: "swiftdata")
                 }
                 }
             }
