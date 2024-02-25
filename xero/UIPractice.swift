@@ -18,4 +18,6 @@ struct DemoView: View {
 }
 #Preview {
     LandmarkList()
+        .environment(ModelData())
+
 }

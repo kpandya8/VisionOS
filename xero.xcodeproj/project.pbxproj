@@ -15,6 +15,8 @@
 		44194FB92B7EFE8300CC62E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44194FB82B7EFE8300CC62E9 /* Assets.xcassets */; };
 		44194FBC2B7EFE8300CC62E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44194FBB2B7EFE8300CC62E9 /* Preview Assets.xcassets */; };
 		44194FC72B7EFE8300CC62E9 /* xeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44194FC62B7EFE8300CC62E9 /* xeroTests.swift */; };
+		444B9E352B8AE309009467B9 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444B9E342B8AE309009467B9 /* LandmarksApp.swift */; };
+		444B9E3A2B8AE4C3009467B9 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444B9E392B8AE4C3009467B9 /* FavouriteButton.swift */; };
 		44CDACD52B88E32900368158 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CDACD42B88E32900368158 /* Landmark.swift */; };
 		44CDACDA2B88E3FC00368158 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 44CDACD92B88E3FC00368158 /* landmarkData.json */; };
 		44CDACDB2B88E3FC00368158 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 44CDACD92B88E3FC00368158 /* landmarkData.json */; };
@@ -58,6 +60,8 @@
 		44194FBD2B7EFE8300CC62E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44194FC22B7EFE8300CC62E9 /* xeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44194FC62B7EFE8300CC62E9 /* xeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xeroTests.swift; sourceTree = "<group>"; };
+		444B9E342B8AE309009467B9 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
+		444B9E392B8AE4C3009467B9 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		44CDACD42B88E32900368158 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		44CDACD92B88E3FC00368158 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		44CDACDC2B88E44400368158 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				44194FB02B7EFE8100CC62E9 /* xeroApp.swift */,
 				44194FB22B7EFE8100CC62E9 /* ContentView.swift */,
 				44EE027B2B88B3F8001B7903 /* UIPractice.swift */,
+				444B9E392B8AE4C3009467B9 /* FavouriteButton.swift */,
+				444B9E342B8AE309009467B9 /* LandmarksApp.swift */,
 				44CDACDF2B88E47500368158 /* Model */,
 				44CDACE12B88E48E00368158 /* Resources */,
 				44EE027D2B88B8D7001B7903 /* MapKit.swift */,
@@ -283,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444B9E3A2B8AE4C3009467B9 /* FavouriteButton.swift in Sources */,
 				44CDACD52B88E32900368158 /* Landmark.swift in Sources */,
+				444B9E352B8AE309009467B9 /* LandmarksApp.swift in Sources */,
 				44EE027C2B88B3F8001B7903 /* UIPractice.swift in Sources */,
 				44194FB32B7EFE8100CC62E9 /* ContentView.swift in Sources */,
 				44194FB12B7EFE8100CC62E9 /* xeroApp.swift in Sources */,

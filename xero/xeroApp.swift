@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct xeroApp: App {
+    
+    @State private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            LandingPage()
+            LandingPage().environment(modelData)
         }
 
         ImmersiveSpace(id: "ImmersiveSpace") {
