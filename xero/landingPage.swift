@@ -58,10 +58,9 @@ struct LandingPage: View {
         struct AboutTabView: View {
             var body: some View {
                 // Your second tab content here
-                VStack {
-                    Text("Second Tab")
-                        .font(.largeTitle)
-                }
+                VStack{
+                HikeView()
+            }
             }
         }
 struct ThirdTabView: View {
