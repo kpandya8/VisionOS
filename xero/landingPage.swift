@@ -36,7 +36,7 @@ struct LandingPage: View {
                         }
             ThirdTabView()
                 .tabItem {
-                    Label("Third", systemImage: "swiftdata")
+                    Label("Third", systemImage: "pencil")
                 }
             FourthTabView()
                 .tabItem {
@@ -50,7 +50,7 @@ struct LandingPage: View {
             var body: some View {
                 // Your first tab content here
                 VStack {
-                    DemoView()
+                    HikeView(hike: ModelData().hikes[0])
                 }
             }
         }
