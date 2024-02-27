@@ -2,13 +2,24 @@ import SwiftUI
 
 
 struct ProfileSummary: View {
+    @Environment(\.presentationMode) var presentationMode
     @Environment(ModelData.self) var modelData
     var profile: Profile
 
 
     var body: some View {
+        
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
+               
+                                    Button(action: {
+                                        self.presentationMode.wrappedValue.dismiss() // Dismiss the view
+                                    }) {
+                                        Image(systemName: "xmark.circle.fill") // Stylish X mark icon
+                                            .accessibilityLabel(Text("Close")) // Accessibility label for the close button
+                                            .padding() // Add padding for easier tapping
+                                    }
+                                
                 Text(profile.username)
                     .bold()
                     .font(.title)
